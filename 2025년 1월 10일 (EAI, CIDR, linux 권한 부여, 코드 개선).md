@@ -120,8 +120,8 @@ chgrp [그룹] [변경할 파일]
 
        장점: 1. 객체지향의 일관성 유지, 2. null 값 체크
 
-1. `String.trim().length() == 0 → String.isEmpty(): trim()` 은 문자열을 처음 부터 끝까지 검사를 하기 때문에 성능적으로 비용이 높다. 또 한 `length()`를 한 번 더 사용하기 때문에 `isEmpty()`를 사용하여 null 과 빈 문자열을 한 번에 계산하는게 더 합리적이다.
-2. 문자열을 `+=`로 이어 붙이기 → `StringBuffer` 사용
+2. `String.trim().length() == 0 → String.isEmpty(): trim()` 은 문자열을 처음 부터 끝까지 검사를 하기 때문에 성능적으로 비용이 높다. 또 한 `length()`를 한 번 더 사용하기 때문에 `isEmpty()`를 사용하여 null 과 빈 문자열을 한 번에 계산하는게 더 합리적이다.
+3. 문자열을 `+=`로 이어 붙이기 → `StringBuffer` 사용
 
        문자열을 사용했을 때 단점: 
 
@@ -136,4 +136,4 @@ chgrp [그룹] [변경할 파일]
 `StringBuffer`: 멀티 쓰레드 환경 지원 X
 `StringBuilder:` 멀티 쓰레드 환경 지원 O
 >
-1. 가독성과 유지보수를 위해 `for`, `if`, `switch`등에 중괄호를 사용하자 `{}`
+4. 가독성과 유지보수를 위해 `for`, `if`, `switch`등에 중괄호를 사용하자 `{}`
